@@ -1,6 +1,6 @@
-input_list = []
-
 import fileinput
+
+input_list = []
 
 for line in fileinput.input():
     input_list.append(int(line))

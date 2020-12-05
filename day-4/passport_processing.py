@@ -31,10 +31,7 @@ def validate_passport(passport):
     if len(passport_keys) < 7 :
         return False
     
-    elif len(passport_keys) == 7 and "cid" not in passport_keys:
-        return True
-    
-    elif len(passport_keys) == 8:
+    elif (len(passport_keys) == 8) or (len(passport_keys) == 7 and "cid" not in passport_keys):
         return True
     
     else:
